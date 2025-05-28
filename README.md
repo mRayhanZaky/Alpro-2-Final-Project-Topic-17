@@ -26,7 +26,7 @@ To help users analyze their training habits, the app allows sorting of workout h
 The system generates simple reports showing the last 10 workouts performed and the total number of calories burned in a selected time period. These reports give users a quick overview of their fitness progress.
 
 
-## **Instalation**
+## 📦 **Instalation**
 ### Clone this repository
 ```bash
 git clone https://github.com/mRayhanZaky/Alpro-2-Final-Project-Topic-17.git
