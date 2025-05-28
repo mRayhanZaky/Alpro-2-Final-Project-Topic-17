@@ -1,5 +1,4 @@
 package main
-
 import "fmt"
 
 const NMAX int = 1000
