@@ -84,6 +84,24 @@ func hapusJadwal(A *tabGym, n *int) {
 	}
 }
 
+func cariJenisOlahraga(A *tabGym, n int, keyword string) {
+	ditemukan := false
+
+	fmt.Println("|=============================================================|========|")
+	fmt.Printf("| %-2s | %-10s | %-15s | %-23s | %-6s |\n", "No", "Workout", "Duration", "Calories", "Indeks")
+	fmt.Println("|=============================================================|========|")
+	for i := 0; i < n; i++ {
+		if A[i].namaLatihan == keyword {
+			fmt.Printf("| %-2d | %-10s | %-15d | %-23d | %-6d |\n", i+1, A[i].namaLatihan, A[i].durasi, A[i].kalori, i)
+			fmt.Println("|-------------------------------------------------------------|--------|")
+			ditemukan = true
+		}
+	}
+	if !ditemukan {
+		fmt.Println("Exercise with that type of training was not found.")
+	}
+}
+
 func rekomendasiWorkout(A *tabGym, n int) {
 	if n == 0 {
 		fmt.Println("There are no exercises yet, cannot give a recommendation!")
